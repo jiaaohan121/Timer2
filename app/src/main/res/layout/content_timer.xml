@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+android:background="#66CDAA"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".TimerView"
+    tools:showIn="@layout/activity_timer"
+    android:weightSum="1">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="248dp"
+    android:layout_gravity="center_horizontal">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="70dp"
+        android:layout_height="153dp"
+        android:layout_weight="1"
+        android:inputType="time"
+        android:textSize="50sp"
+        android:ems="10"
+        android:id="@+id/etHour"
+        android:background="@null"/>
+
+    <TextView
+        android:layout_width="18dp"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:layout_width="74dp"
+        android:layout_height="153dp"
+        android:layout_weight="1"
+        android:inputType="time"
+        android:ems="10"
+        android:textSize="50sp"
+        android:id="@+id/etMin"
+        android:background="@null"/>
+    <TextView
+        android:layout_width="18dp"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:id="@+id/textView2" />
+    <EditText
+        android:layout_width="74dp"
+        android:layout_height="153dp"
+        android:layout_weight="1"
+        android:inputType="time"
+        android:ems="50"
+        android:textSize="50sp"
+        android:id="@+id/etSec"
+        android:background="@null"/>
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>
+   <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_weight="0.62">
+
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/Start"
+           android:id="@+id/btnStart"
+           android:background="@null"
+          android:drawableLeft="@drawable/start"
+           android:layout_gravity="center_horizontal|top" />
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/Resume"
+           android:id="@+id/btnResume"
+           android:background="@null"
+           android:drawableLeft="@drawable/start"
+
+           android:layout_gravity="center_horizontal|top" />
+
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/Pause"
+           android:id="@+id/btnPause"
+           android:background="@null"
+           android:drawableLeft="@drawable/pause"
+
+           android:layout_gravity="center_horizontal|top" />
+
+       <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Reset"
+            android:id="@+id/btnReset"
+           android:background="@null"
+            android:drawableLeft="@drawable/reset"
+
+           android:layout_gravity="center" />
+
+
+   </FrameLayout>
+
+
+</LinearLayout>
